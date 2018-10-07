@@ -3,13 +3,13 @@
 /*
     A simple text formatter that splits strings in half
     avoiding splitting words, the treshold is inputed 
-	by the user
+    by the user
 
-	usage:
-	text_formatter.x treshold (<< test.txt)
+     usage:
+     text_formatter.x treshold (< test.txt)
 
-	@author Salvatore Milite
-	@version 04 October 2018
+     @author Salvatore Milite
+     @version 04 October 2018
 
 */
 
