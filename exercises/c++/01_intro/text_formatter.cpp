@@ -1,7 +1,10 @@
 #include <iostream>
+#include <regex>
+
 /*
     A simple text formatter that splits strings in half
-    avoiding splitting words
+    avoiding splitting words, the treshold is inputed 
+	by the user
 
 	@author Salvatore Milite
 	@version 04 October 2018
@@ -18,8 +21,12 @@ int main()
     {
         if(line.length() > tresh)
         {
-            std::cout << line.substr(0,(line.length()/2))
-            << std::endl << line.substr((line.length()/2), line.length()) << std::endl;
+			int pos = line.length()/2;
+			while(isalnum(line[pos]) || ispunct(line[pos]))
+				pos++;
+            std::cout << line.substr(0,(pos)
+            << std::endl << line.substr((pos, line.length())
+			<< std::endl;
 
         }
         else
