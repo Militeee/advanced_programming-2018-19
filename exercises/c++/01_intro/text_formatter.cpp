@@ -1,19 +1,30 @@
 #include <iostream>
-#include<string>
+/*
+    A simple text formatter that splits strings in half
+    avoiding splitting words
+
+	@author Salvatore Milite
+	@version 04 October 2018
+
+*/
 
 int main()
 {
-    double measure;
-    std::string unit;
-    int result;
-    std::cin >> measure >> unit;
-    if(unit == "inch")
-        std::cout << measure * 0.0254 << " m";
-    else if (unit == "m" || unit == "meters")
-        std::cout << measure * (1/0.0254) << " inch";
-    else
-        std::cout << unit << " is not a valid unit";
+    std::string line;
+    int tresh;
+    std::cout << "Select a treshold \n";
+    std::cin >> tresh;
+    while(std::getline(std::cin, line))
+    {
+        if(line.length() > tresh)
+        {
+            std::cout << line.substr(0,(line.length()/2))
+            << std::endl << line.substr((line.length()/2), line.length()) << std::endl;
 
-    //1 inch = 0.0254 m
+        }
+        else
+            std::cout << line << std::endl;
+
+    }
 }
 
