@@ -29,6 +29,7 @@ double get_double()
     return i;
 }
 
+
 void uniq()
 {
     std::string line;
