@@ -16,7 +16,6 @@
 int get_int(std::istream& in)
 {
     int i;
-    in << mess;
     while(!(in >> i))
     {
         in.clear();
@@ -44,11 +43,11 @@ double get_double(std::istream& in)
 int main()
 {
 
-    std::cout << "Insert a valid integer"
-    int j = get_int(std::cin);
-    std::cout << "Insert a valid double"
-    double k = get_double(std::cin);
-    std::cout << "You typed(int): " << j;
-    std::cout << "You typed(double): " << k;
+    std::cout << "Insert a valid integer" << std::endl;
+	int j = get_int(std::cin);
+    std::cout << "Insert a valid double" << std::endl;
+	double k = get_double(std::cin);
+    std::cout << "You typed(int): " << j  << std::endl;
+    std::cout << "You typed(double): " << k << std::endl;
   
 }
