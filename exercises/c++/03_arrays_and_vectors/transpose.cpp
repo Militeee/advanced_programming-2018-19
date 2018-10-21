@@ -1,10 +1,23 @@
 #include<iostream>
 #include<array>
-
+// set the number of cols and rows
 #define COL 20
 #define ROW 5
+/*
+  The programs transpose and print a matrix of number form 1 to N
+  of sizes declared in macros.
+  @author Salvatore Milite
+  @version 21 October 2018
+*/
 
 
+/*
+  This function takes a matrix, coded by an std::array and a value from rows
+  and columns, and calculate its transpose, modifing the original array. 
+  @param1 M the std::arry of size r*c
+  @param2 r the row number
+  @param3 c the column number
+*/
 template<std::size_t N>
 void slow_transpose(std::array<double,N>& M, std::size_t r, std::size_t c)
 {
@@ -15,6 +28,13 @@ void slow_transpose(std::array<double,N>& M, std::size_t r, std::size_t c)
   std::swap(M2,M);
 }
 
+/*
+  This functions take a matrix, coded by a std::array a row number and a
+  column number, and print it.
+  @param1 M the std::arry of size r*c
+  @param2 r the row number
+  @param3 c the column number
+*/
 template<std::size_t N>
 void print_m(const std::array<double,N> M, std::size_t r, std::size_t c)
 {

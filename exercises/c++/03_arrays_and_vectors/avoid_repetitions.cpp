@@ -1,7 +1,19 @@
 #include<iostream>
 #include<algorithm>
 #include<vector>
+/*
+  Program that stores all the word taken from std input
+  and print them wihtout repetitions
 
+  @author Salvatore Milite
+  @version 21 October 2018
+
+ */
+
+/*
+  Function that remove repeated objects on a string vector
+  @param vec vector of strings
+ */
 void unique(std::vector<std::string>& vec)
 {
 	std::sort(vec.begin(), vec.end());
