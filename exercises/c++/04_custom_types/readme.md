@@ -77,7 +77,7 @@ Of course you can add parenthesis, or whatever to embellish the output
 
 
 
-## C++14
+## C++14	
 
 Modify the class `Vector<typename T>` presented during the lecture exploiting all the of C++14 features you know . Can you see any benefit?
 
